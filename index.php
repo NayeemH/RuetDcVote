@@ -8,12 +8,12 @@
         print_r($random_number_array);
         
         // Open a file in write mode ('w') 
-        // $fp = fopen('token.csv', 'w'); 
+        $fp = fopen('token.csv', 'w'); 
         
         // // Loop through file pointer and a line 
-        // foreach ($random_number_array as $fields) { 
-        //     fputcsv($fp, $fields); 
-        // } 
+        foreach ($random_number_array as $fields) { 
+             fputcsv($fp, $fields); 
+        } 
         
-        // fclose($fp);
+         fclose($fp);
     ?>
